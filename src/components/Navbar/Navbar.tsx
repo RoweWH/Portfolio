@@ -11,6 +11,7 @@ function Navbar() {
       </NavLink>
 
       <nav className="navbar__links" aria-label="Main navigation">
+        <NavLink to="/">Home</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/speedcubing">Speedcubing</NavLink>

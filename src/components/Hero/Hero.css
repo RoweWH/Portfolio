@@ -7,7 +7,16 @@
 }
 
 .hero__content {
-   max-width: 900px;
+   display: grid;
+   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+   align-items: center;
+   gap: clamp(60px, 8vw, 140px);
+
+   width: 100%;
+}
+
+.hero__intro {
+   min-width: 0;
 }
 
 .hero__eyebrow {
@@ -51,22 +60,19 @@
    margin-top: clamp(28px, 3vw, 40px);
 }
 
-.hero__primary,
-.hero__secondary {
+.hero__primary {
    display: inline-flex;
    align-items: center;
    gap: 10px;
 
-   font-size: 0.95rem;
-   font-weight: 600;
-}
-
-.hero__primary {
    padding: 14px 20px;
 
    color: #ffffff;
    background: var(--color-accent);
    border-radius: 6px;
+
+   font-size: 0.95rem;
+   font-weight: 600;
 
    transition:
       transform 160ms ease,
@@ -102,14 +108,103 @@
    transform: translateY(-2px);
 }
 
+/* Resume */
+
+.hero__resume {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.hero__resume-button {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 14px;
+
+   width: 100%;
+   max-width: 440px;
+   min-height: 180px;
+   padding: 28px;
+
+   color: var(--color-text);
+   border: 1px solid var(--color-accent);
+   border-radius: 16px;
+
+   text-align: center;
+   text-decoration: none;
+
+   transition:
+      transform 160ms ease,
+      background-color 160ms ease;
+}
+
+.hero__resume-button:hover {
+   transform: translateY(-4px);
+   background: rgba(59, 130, 246, 0.07);
+}
+
+.hero__resume-text {
+   font-size: clamp(1.8rem, 2.5vw, 2.7rem);
+   font-weight: 600;
+   line-height: 1.1;
+}
+
+.hero__resume-arrow {
+   color: var(--color-accent);
+
+   font-size: 2.4rem;
+   line-height: 1;
+
+   transition: transform 160ms ease;
+}
+
+.hero__resume-button:hover .hero__resume-arrow {
+   transform: translateY(4px);
+}
+
+@media (max-width: 900px) {
+   .hero__content {
+      grid-template-columns: 1fr;
+      gap: 64px;
+   }
+
+   .hero__resume {
+      justify-content: flex-start;
+   }
+
+   .hero__resume-button {
+      max-width: 500px;
+   }
+}
+
 @media (max-width: 600px) {
    .hero {
       align-items: flex-start;
+
       min-height: auto;
       padding-block: 80px 100px;
    }
 
    .hero__title {
       font-size: clamp(3.5rem, 18vw, 5rem);
+   }
+
+   .hero__actions {
+      gap: 22px;
+   }
+
+   .hero__resume-button {
+      min-height: 160px;
+      padding: 24px;
+   }
+
+   .hero__resume-text {
+      font-size: 1.8rem;
+   }
+
+   .hero__resume-arrow {
+      font-size: 2rem;
    }
 }

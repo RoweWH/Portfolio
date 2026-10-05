@@ -46,6 +46,27 @@ function About() {
 
       <section className="about__section">
         <div className="about__section-heading">
+          <p className="about__eyebrow">Technology</p>
+          <h2>What I Work With</h2>
+        </div>
+
+        <div className="about__tech-grid">
+          {Object.entries(technologies).map(([category, items]) => (
+            <div className="about__tech-group" key={category}>
+              <h3>{category}</h3>
+
+              <div className="about__tech-list">
+                {items.map((technology) => (
+                  <span key={technology}>{technology}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="about__section">
+        <div className="about__section-heading">
           <p className="about__eyebrow">Background</p>
           <h2>Work & Education</h2>
         </div>
@@ -81,26 +102,7 @@ function About() {
         </div>
       </section>
 
-      <section className="about__section">
-        <div className="about__section-heading">
-          <p className="about__eyebrow">Technology</p>
-          <h2>What I Work With</h2>
-        </div>
-
-        <div className="about__tech-grid">
-          {Object.entries(technologies).map(([category, items]) => (
-            <div className="about__tech-group" key={category}>
-              <h3>{category}</h3>
-
-              <div className="about__tech-list">
-                {items.map((technology) => (
-                  <span key={technology}>{technology}</span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
     </div>
   );
 }

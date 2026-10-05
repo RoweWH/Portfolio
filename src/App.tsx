@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
-import ProjectsPage from './pages/Projects/ProjectsPage';
+import ProjectsPage from './pages/Projects/Projects';
 import Speedcubing from './pages/Speedcubing/Speedcubing';
 
 import './App.css';
