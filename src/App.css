@@ -1,0 +1,51 @@
+:root {
+   --color-background: #08111f;
+   --color-surface: #0d1828;
+
+   --color-text: #f4f6f8;
+   --color-text-muted: #91a0b5;
+
+   --color-border: rgba(145, 160, 181, 0.14);
+
+   --color-accent: #3b82f6;
+}
+
+.app {
+   min-height: 100vh;
+
+   color: var(--color-text);
+   background: var(--color-background);
+}
+
+.app__container {
+   width: 100%;
+
+   padding-inline: clamp(24px, 6vw, 120px);
+}
+.page {
+  padding-block: clamp(80px, 10vw, 160px);
+}
+
+.page__eyebrow {
+  margin: 0 0 12px;
+  color: var(--color-accent);
+  font-size: clamp(0.75rem, 0.8vw, 0.9rem);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.page__title {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.page__description {
+  margin: 24px 0 0;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
