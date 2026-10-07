@@ -7,7 +7,7 @@ function Projects() {
   return (
     <section className="projects" id="projects">
       <div className="projects__heading">
-        <h2 className="projects__title">Projects</h2>
+        <h1 className="page__title projects__title">Projects</h1>
       </div>
 
       <div className="projects__list">

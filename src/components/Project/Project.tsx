@@ -13,7 +13,7 @@ function Project({ project }: ProjectProps) {
   return (
     <article className="project">
       <div className="project__content">
-        <h3 className="project__name">{project.name}</h3>
+        <h2 className="project__name">{project.name}</h2>
 
         <p className="project__description">
           {project.description}

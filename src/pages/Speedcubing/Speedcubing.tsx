@@ -8,13 +8,13 @@ function Speedcubing() {
     <div className="speedcubing">
       <section className="speedcubing__hero">
         <div className="speedcubing__career">
-          <p className="speedcubing__eyebrow">Speedcubing</p>
+          <p className="page__eyebrow">Speedcubing</p>
 
-          <h1 className="speedcubing__title">
+          <h1 className="page__title speedcubing__title">
             20 Years of Speedcubing
           </h1>
 
-          <div className="speedcubing__body">
+          <div className="page__body speedcubing__body">
             <p>
               I first picked up a cube in 2005 and began competing in 2007. I
               went on to become a two-time U.S. National Champion and one of
@@ -24,8 +24,8 @@ function Speedcubing() {
             </p>
 
             <p>
-              In 2019, I returned to competitive cubing and took on 3x3x3 Multi-Blind, 
-              an event where
+              In 2019, I returned to competitive cubing and took on 3x3x3
+              Multi-Blind, an event where
               competitors memorize and solve as many cubes as possible while
               blindfolded within a one-hour time limit. In April 2025, that
               pursuit culminated in a world record of 63/66 cubes in 59:50. The
@@ -40,10 +40,9 @@ function Speedcubing() {
             </p>
 
             <p>
-              I was also one of the first speedcubers fortunate enough to have
-              the opportunity to turn the hobby into a professional career.
-              Since 2015, I have worked at TheCubicle, a leading puzzle
-              retailer based in Elmsford, New York.
+              I was also among the first speedcubers to turn the hobby into a
+              professional career. Since 2015, I have worked at TheCubicle, a
+              leading puzzle retailer based in Elmsford, New York.
             </p>
           </div>
 
@@ -86,7 +85,7 @@ function Speedcubing() {
 
         <aside className="speedcubing__wca-column">
           <div className="speedcubing__wca-heading">
-            <span>WCA Rankings & Records</span>
+            <h2>WCA Rankings &amp; Records</h2>
           </div>
 
           <WcaProfile />

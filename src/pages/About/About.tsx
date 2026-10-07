@@ -4,8 +4,8 @@ import './About.css';
 const technologies = {
   Frontend: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Vite'],
   Backend: ['C#', '.NET', 'Node.js', 'Express'],
-  Data: ['SQL', 'MongoDB', 'Dapper', 'IndexedDB'],
-  Tools: ['Git', 'GitHub', 'Vercel', 'ChatGPT', 'GitHub Copilot'],
+  Data: ['SQL', 'MongoDB', 'Dapper', 'Dexie.js'],
+  Tools: ['Git', 'GitHub', 'Vercel', 'Postman', 'SSMS', 'GitHub Copilot'],
 };
 
 function About() {
@@ -13,9 +13,9 @@ function About() {
     <div className="about">
       <section className="about__intro">
         <div className="about__intro-copy">
-          <h1 className="about__title">About Me</h1>
+          <h1 className="page__title about__title">About Me</h1>
 
-          <div className="about__body">
+          <div className="page__body about__body">
             <p>
               I enjoy designing and building software from the ground up,
               solving difficult problems, and finding creative ways to design
@@ -28,10 +28,10 @@ function About() {
             </p>
 
             <p>
-  Outside of software, I'm a competitive speedcuber and enjoy bowling and
-  CrossFit. I also spend much of my free time writing science fiction and
-  fantasy.
-</p>
+              Outside of software, I'm a competitive speedcuber and enjoy
+              bowling and CrossFit. I also spend much of my free time writing
+              scifi and fantasy.
+            </p>
           </div>
         </div>
 
@@ -46,8 +46,8 @@ function About() {
 
       <section className="about__section">
         <div className="about__section-heading">
-          <p className="about__eyebrow">Technology</p>
-          <h2>What I Work With</h2>
+          <p className="page__eyebrow">Technology</p>
+          <h2 className="page__title">What I Work With</h2>
         </div>
 
         <div className="about__tech-grid">
@@ -67,8 +67,8 @@ function About() {
 
       <section className="about__section">
         <div className="about__section-heading">
-          <p className="about__eyebrow">Background</p>
-          <h2>Work & Education</h2>
+          <p className="page__eyebrow">Background</p>
+          <h2 className="page__title">Work & Education</h2>
         </div>
 
         <div className="about__background-grid">
@@ -101,8 +101,6 @@ function About() {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 }

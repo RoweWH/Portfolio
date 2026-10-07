@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <NavLink className="navbar__brand" to="/" aria-label="Home">
-        <img src={logo} alt="Rowe Hessler Logo" className="navbar__brand-logo" />
+        <img src={logo} alt="Rowe Hessler Logo" />
       </NavLink>
 
       <nav className="navbar__links" aria-label="Main navigation">

@@ -68,11 +68,6 @@
 }
 
 @media (max-width: 600px) {
-   .navbar__brand-dot {
-      width: 4px;
-      height: 4px;
-   }
-
    .navbar__links {
       gap: 18px;
    }

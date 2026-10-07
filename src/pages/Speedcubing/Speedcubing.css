@@ -2,28 +2,10 @@
   padding-block: clamp(72px, 9vw, 140px);
 }
 
-.speedcubing__eyebrow {
-  margin: 0 0 12px;
-  color: var(--color-accent);
-  font-size: clamp(0.75rem, 0.8vw, 0.9rem);
-  font-weight: 600;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-}
-
-.speedcubing__title,
-.speedcubing__pursuit h2 {
-  margin: 0;
-  color: var(--color-text);
-  font-weight: 700;
-  line-height: 0.98;
-  letter-spacing: -0.055em;
-  text-transform: uppercase;
-}
-
 .speedcubing__title {
   max-width: 760px;
   font-size: clamp(3rem, 5.6vw, 6.4rem);
+  line-height: 0.98;
 }
 
 .speedcubing__hero {
@@ -40,13 +22,7 @@
 .speedcubing__body {
   max-width: 720px;
   margin-top: clamp(30px, 4vw, 48px);
-  color: var(--color-text-muted);
   font-size: clamp(1rem, 1.1vw, 1.1rem);
-  line-height: 1.75;
-}
-
-.speedcubing__body p {
-  margin: 0;
 }
 
 .speedcubing__body p + p {
@@ -89,17 +65,13 @@
   margin-bottom: 14px;
 }
 
-.speedcubing__wca-heading span {
+.speedcubing__wca-heading h2 {
+  margin: 0;
   color: var(--color-accent);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-}
-
-.speedcubing__wca-heading strong {
-  color: var(--color-text);
-  font-size: 1rem;
 }
 
 .speedcubing__wca-column .wca-profile__topline {
@@ -124,65 +96,6 @@
   padding: 9px 8px;
 }
 
-.speedcubing__pursuit {
-  margin-top: clamp(120px, 15vw, 220px);
-  padding-top: clamp(64px, 8vw, 110px);
-  border-top: 1px solid var(--color-border);
-}
-
-.speedcubing__pursuit-heading {
-  max-width: 900px;
-}
-
-.speedcubing__pursuit h2 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
-}
-
-.speedcubing__pursuit-story {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
-  gap: clamp(44px, 7vw, 100px);
-  align-items: start;
-  margin-top: clamp(42px, 6vw, 72px);
-}
-
-.speedcubing__pursuit-copy {
-  color: var(--color-text-muted);
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
-  line-height: 1.75;
-}
-
-.speedcubing__pursuit-copy p {
-  margin: 0;
-}
-
-.speedcubing__pursuit-copy p + p {
-  margin-top: 20px;
-}
-
-.speedcubing__pursuit-images {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 14px;
-}
-
-.speedcubing__pursuit-images img {
-  display: block;
-  width: 100%;
-  height: clamp(300px, 35vw, 500px);
-  object-fit: cover;
-  border: 1px solid var(--color-border);
-  border-radius: 10px;
-}
-
-.speedcubing__pursuit-images img:first-child {
-  object-position: center 28%;
-}
-
-.speedcubing__pursuit-images img:last-child {
-  object-position: center;
-}
-
 .speedcubing__video {
   overflow: hidden;
   width: min(100%, 1100px);
@@ -199,81 +112,6 @@
   border: 0;
 }
 
-.speedcubing__video-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  width: 100%;
-  height: 100%;
-  color: var(--color-text-muted);
-  text-align: center;
-}
-
-.speedcubing__video-placeholder span {
-  color: var(--color-accent);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.speedcubing__video-placeholder strong {
-  color: var(--color-text);
-  font-size: clamp(1.8rem, 4vw, 4rem);
-}
-
-.speedcubing__documentary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  width: min(100%, 1100px);
-  margin: 18px auto 0;
-  padding: clamp(24px, 3vw, 36px);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 10px;
-  transition: border-color 160ms ease, transform 160ms ease;
-}
-
-.speedcubing__documentary:hover {
-  border-color: var(--color-text-muted);
-  transform: translateY(-2px);
-}
-
-.speedcubing__documentary div {
-  max-width: 720px;
-}
-
-.speedcubing__documentary span {
-  display: block;
-  margin-bottom: 7px;
-  color: var(--color-accent);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.speedcubing__documentary strong {
-  color: var(--color-text);
-  font-size: clamp(1.4rem, 2vw, 2rem);
-}
-
-.speedcubing__documentary p {
-  margin: 8px 0 0;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
-
-.speedcubing__documentary > svg {
-  flex: 0 0 auto;
-  color: var(--color-accent);
-  font-size: 1.5rem;
-}
-
 @media (max-width: 1180px) {
   .speedcubing__hero {
     grid-template-columns: 1fr;
@@ -284,18 +122,6 @@
   }
 }
 
-@media (max-width: 800px) {
-  .speedcubing__pursuit-story,
-  .speedcubing__pursuit-images {
-    grid-template-columns: 1fr;
-  }
-
-  .speedcubing__pursuit-images img {
-    height: auto;
-    max-height: 520px;
-  }
-}
-
 @media (max-width: 600px) {
   .speedcubing {
     padding-block: 72px 100px;
@@ -303,9 +129,5 @@
 
   .speedcubing__wca-column .wca-profile__topline {
     grid-template-columns: 1fr;
-  }
-
-  .speedcubing__documentary {
-    align-items: flex-start;
   }
 }

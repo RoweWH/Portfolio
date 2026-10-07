@@ -15,7 +15,7 @@ export const projects: ProjectData[] = [
   {
     name: 'droobTimer',
     description:
-      'droobTimer is a speedcubing timer built for practicing a wide range of puzzles, storing and analyzing solves, and customizing the cubing experience with inspection settings, themes, multiple timer inputs, and more. Its interface is built almost entirely from hand-drawn SVGs, giving the app a playful, deliberately imperfect personality—and occasionally letting it troll the user. Still in development, DroobTimer will eventually introduce gamification designed to make practicing and improving at cubing even more fun.',
+      'droobTimer is a speedcubing timer built for practicing a wide range of puzzles, storing and analyzing solves, and customizing the cubing experience with inspection settings, themes, multiple timer inputs, and more. Its interface is built almost entirely from hand-drawn SVGs, giving the app a playful, deliberately imperfect personality—and occasionally letting it troll the user. Still in development, droobTimer will eventually introduce gamification designed to make practicing and improving at cubing even more fun.',
     image: droobTimerImage,
     technologies: ['React', 'TypeScript', 'IndexedDB'],
     githubUrl: 'https://github.com/RoweWH/droobTimer',
@@ -27,7 +27,7 @@ export const projects: ProjectData[] = [
     image: bldLabImage,
     technologies: [
   'React',
-  'TypeScript',
+  'Javascript',
   'Node.js',
   'Express',
   'MongoDB',

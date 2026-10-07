@@ -2,25 +2,6 @@
   padding-block: clamp(72px, 9vw, 140px);
 }
 
-.about__eyebrow {
-  margin: 0 0 12px;
-  color: var(--color-accent);
-  font-size: clamp(0.75rem, 0.8vw, 0.9rem);
-  font-weight: 600;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-}
-
-.about__title,
-.about__section h2 {
-  margin: 0;
-  color: var(--color-text);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.055em;
-  text-transform: uppercase;
-}
-
 .about__title {
   font-size: clamp(3rem, 6vw, 6rem);
 }
@@ -43,13 +24,7 @@
 .about__body {
   max-width: 680px;
   margin-top: 30px;
-  color: var(--color-text-muted);
   font-size: clamp(1rem, 1.15vw, 1.12rem);
-  line-height: 1.75;
-}
-
-.about__body p {
-  margin: 0;
 }
 
 .about__body p + p {
@@ -67,13 +42,6 @@
   object-fit: cover;
   border: 1px solid var(--color-border);
   border-radius: 12px;
-}
-
-.about__photo--portrait {
-  top: 0;
-  right: 0;
-  width: 72%;
-  aspect-ratio: 4 / 5;
 }
 
 .about__photo--coding {

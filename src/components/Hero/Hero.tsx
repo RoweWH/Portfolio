@@ -7,8 +7,8 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__content">
-        <div className="hero__intro">
-          <p className="hero__eyebrow">Software Engineer</p>
+        <div>
+          <p className="page__eyebrow">Software Engineer</p>
 
           <h1 className="hero__title">
             Rowe
@@ -23,7 +23,6 @@ function Hero() {
           <div className="hero__actions">
             <Link className="hero__primary" to="/projects">
               View my work
-              <span aria-hidden="true">→</span>
             </Link>
 
             <div className="hero__socials">
@@ -63,10 +62,7 @@ function Hero() {
             href="/Hessler-Rowe-Resume.pdf"
             download="Hessler-Rowe-Resume.pdf"
           >
-            <span className="hero__resume-text">Download Resume</span>
-            <span className="hero__resume-arrow" aria-hidden="true">
-              ↓
-            </span>
+            Download Resume
           </a>
         </div>
       </div>
