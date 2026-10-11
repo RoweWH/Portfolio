@@ -68,7 +68,19 @@
 }
 
 @media (max-width: 600px) {
+   .navbar {
+      gap: 12px;
+   }
+
+   .navbar__brand {
+      flex-shrink: 0;
+   }
+
    .navbar__links {
-      gap: 18px;
+      gap: 12px;
+   }
+
+   .navbar__links a {
+      font-size: 0.75rem;
    }
 }

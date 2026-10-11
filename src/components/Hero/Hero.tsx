@@ -1,4 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FiMapPin } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import './Hero.css';
@@ -20,10 +21,23 @@ function Hero() {
             I love building software, solving problems, and learning new things.
           </p>
 
+          <p className="hero__description">
+  <FiMapPin />
+  <span> White Plains, NY</span>
+</p>
+
           <div className="hero__actions">
             <Link className="hero__primary" to="/projects">
               View my work
             </Link>
+
+            <a
+              className="hero__primary"
+              href="/Hessler-Rowe-Resume.pdf"
+              download="Hessler-Rowe-Resume.pdf"
+            >
+              Resume
+            </a>
 
             <div className="hero__socials">
               <a
@@ -54,16 +68,6 @@ function Hero() {
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="hero__resume">
-          <a
-            className="hero__resume-button"
-            href="/Hessler-Rowe-Resume.pdf"
-            download="Hessler-Rowe-Resume.pdf"
-          >
-            Download Resume
-          </a>
         </div>
       </div>
     </section>

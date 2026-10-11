@@ -35,6 +35,14 @@ function Contact() {
       <p className="contact__eyebrow">Contact</p>
       <h1 className="contact__title">Get in Touch</h1>
 
+      <p className="contact__description">
+  Feel free to use the form below or reach out directly at{' '}
+  <a href="mailto:rowehessler@gmail.com">
+    rowehessler@gmail.com
+  </a>
+  .
+</p>
+
       <form className="contact__form" onSubmit={handleSubmit}>
         <input name="name" type="text" placeholder="Name" required />
         <input name="email" type="email" placeholder="Email" required />

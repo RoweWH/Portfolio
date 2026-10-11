@@ -1,18 +1,16 @@
 .hero {
    display: flex;
    align-items: center;
+   justify-content: center;
 
-   min-height: calc(100vh - clamp(76px, 7vw, 96px));
+   min-height: calc(100svh - clamp(76px, 7vw, 96px));
    padding-block: clamp(64px, 8vh, 120px);
+   box-sizing: border-box;
 }
 
 .hero__content {
-   display: grid;
-   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
-   align-items: center;
-   gap: clamp(60px, 8vw, 140px);
-
    width: 100%;
+   max-width: 900px;
 }
 
 .hero__title {
@@ -38,6 +36,7 @@
 .hero__actions {
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
    gap: 28px;
 
    margin-top: clamp(28px, 3vw, 40px);
@@ -85,54 +84,10 @@
    transform: translateY(-2px);
 }
 
-.hero__resume {
-   display: flex;
-   justify-content: center;
-}
-
-.hero__resume-button {
-   width: 100%;
-   max-width: 440px;
-   padding: 60px 28px;
-
-   border: 1px solid var(--color-accent);
-   border-radius: 16px;
-
-   text-align: center;
-   font-size: clamp(1.8rem, 2.5vw, 2.7rem);
-   font-weight: 600;
-
-   transition:
-      transform 160ms ease,
-      background-color 160ms ease;
-}
-
-.hero__resume-button:hover {
-   transform: translateY(-4px);
-   background: rgba(59, 130, 246, 0.07);
-}
-
-@media (max-width: 900px) {
-   .hero__content {
-      grid-template-columns: 1fr;
-      gap: 64px;
-   }
-
-   .hero__resume {
-      justify-content: flex-start;
-   }
-
-   .hero__resume-button {
-      max-width: 500px;
-   }
-}
-
 @media (max-width: 600px) {
    .hero {
-      align-items: flex-start;
-
-      min-height: auto;
-      padding-block: 80px 100px;
+      min-height: calc(100svh - 76px);
+      padding-block: 48px;
    }
 
    .hero__title {
@@ -141,10 +96,5 @@
 
    .hero__actions {
       gap: 22px;
-   }
-
-   .hero__resume-button {
-      padding: 60px 24px;
-      font-size: 1.8rem;
    }
 }

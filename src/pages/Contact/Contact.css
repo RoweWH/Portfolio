@@ -46,3 +46,18 @@
 .contact__sent {
   margin: 0;
 }
+
+.contact__description {
+  margin: 0 0 32px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.contact__description a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.contact__description a:hover {
+  text-decoration: underline;
+}
